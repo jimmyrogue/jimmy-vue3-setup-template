@@ -6,9 +6,11 @@ const mode = useColorMode();
 
 <template>
   <div class="dark:text-red w-screen h-screen h-dvh">
-    <button @click="mode = mode === 'dark' ? 'light' : 'dark'">
-      toggle mode: {{ mode }}
-    </button>
+    <div class="flex flex-col items-start">
+      <button @click="mode = mode === 'dark' ? 'light' : 'dark'">
+        toggle mode: {{ mode }}
+      </button>
+    </div>
   </div>
 </template>
 <style>
