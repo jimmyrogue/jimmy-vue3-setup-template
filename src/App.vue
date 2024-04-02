@@ -11,6 +11,7 @@ const mode = useColorMode();
         toggle mode: {{ mode }}
       </button>
     </div>
+    <router-view></router-view>
   </div>
 </template>
 <style>
