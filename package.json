@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@typescript-eslint/parser": "^7.6.0",
     "@vueuse/core": "^10.7.2",
     "axios": "^1.6.7",
     "less": "^4.2.0",
@@ -23,6 +24,8 @@
     "@unocss/reset": "^0.58.5",
     "@unocss/transformer-variant-group": "^0.58.5",
     "@vitejs/plugin-vue": "^4.5.2",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "3.2.5",
     "typescript": "^5.2.2",
     "unocss": "^0.58.5",
     "unplugin-auto-import": "^0.17.5",
