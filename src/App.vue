@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { useColorMode } from "@vueuse/core";
+import { useColorMode } from '@vueuse/core';
 
 const mode = useColorMode();
 </script>
 
 <template>
-  <div class="dark:text-white w-screen h-screen h-dvh">
+  <div class="h-dvh h-screen w-screen dark:text-white">
     <div class="flex flex-col items-start">
       <button @click="mode = mode === 'dark' ? 'light' : 'dark'">
         toggle mode: {{ mode }}

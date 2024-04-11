@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import VueSVG from "@/assets/vue.svg";
+import VueSVG from '@/assets/vue.svg';
 
 const { title } = defineProps<{ title: string }>();
 
