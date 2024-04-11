@@ -6,10 +6,16 @@ import Components from "unplugin-vue-components/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  resolve: {
+    dedupe: ["vue"],
+    alias: {
+      "@": "/src",
+    },
+  },
   plugins: [
     vue(),
     UnoCSS(),
-    Components({ dts: true }),
+    Components({ dts: "src/components.d.ts" }),
     AutoImport({
       include: [
         /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
@@ -22,6 +28,7 @@ export default defineConfig({
         // presets
         "vue",
         "vue-router",
+        "pinia",
         // custom
         {
           axios: [
@@ -30,6 +37,7 @@ export default defineConfig({
           ],
         },
       ],
+      dts: "src/auto-import.d.ts",
     }),
   ],
 });
