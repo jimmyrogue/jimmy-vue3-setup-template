@@ -18,6 +18,6 @@ const config = {
   useTabs: false,
   vueIndentScriptAndStyle: false,
   plugins: ['prettier-plugin-tailwindcss'],
-};
+}
 
-module.exports = config;
+module.exports = config

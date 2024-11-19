@@ -5,9 +5,7 @@ module.exports = {
   },
   extends: [
     'standard-with-typescript',
-    'prettier',
-    'plugin:vue/vue3-recommended',
-    'plugin:prettier/recommended',
+    '@unocss',
   ],
   overrides: [
     {
@@ -34,10 +32,10 @@ module.exports = {
     'vue/multi-word-component-names': [
       'error',
       {
-        ignores: ['index'], //需要忽略的组件名
+        ignores: ['index'], // 需要忽略的组件名
       },
     ],
     'no-return-await': 'in-try-catch',
     '@typescript-eslint/return-await': 'in-try-catch',
   },
-};
+}
